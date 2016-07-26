@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A</title>
+</head>
+<body>
+    <button onclick="case1()">调用iframe中B方法</button>
+    <iframe src="b.html" id="if1"></iframe>
+</body>
+<script>
+    function case1() {
+        var ifr=document.getElementById("if1");
+        ifr.contentWindow.b_method();
+    }
+</script>
+</html>
