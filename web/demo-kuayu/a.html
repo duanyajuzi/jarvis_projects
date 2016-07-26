@@ -9,6 +9,7 @@
     <iframe src="b.html" id="if1"></iframe>
 </body>
 <script>
+    //同一个域调用iframe中方法
     function case1() {
         var ifr=document.getElementById("if1");
         ifr.contentWindow.b_method();
